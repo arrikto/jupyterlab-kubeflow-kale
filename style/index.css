@@ -34,6 +34,15 @@
   padding: 5px 0px;
 }
 
+.katib-dialog-header {
+  padding: 5px 0 !important;
+  margin: 20px 0 10px 0 !important;
+}
+
+.katib-headers-tooltip {
+  height: 0.7em !important;
+}
+
 .kale-header {
   color: #477ef0;
   letter-spacing: 0.4px;
