@@ -92,6 +92,7 @@ export interface IMaterialInput {
   extraInputProps?: any;
   variant?: 'filled' | 'standard' | 'outlined';
   onBeforeUpdate?: (value: string) => boolean;
+  style?: any;
   placeholder?: string;
 }
 
@@ -160,6 +161,7 @@ export const MaterialInput: React.FunctionComponent<IMaterialInput> = props => {
           },
         }}
         className={classes.textField}
+        style={props.style || {}}
         error={error}
         label={props.label}
         value={value}
@@ -195,6 +197,7 @@ interface IMaterialSelect {
   index: number;
   helperText?: string;
   variant?: 'filled' | 'standard' | 'outlined';
+  style?: any;
 }
 
 export const MaterialSelect: React.FunctionComponent<IMaterialSelect> = props => {
@@ -244,6 +247,7 @@ export const MaterialSelect: React.FunctionComponent<IMaterialSelect> = props =>
           },
         }}
         className={classes.textField}
+        style={props.style || {}}
         id={props.label}
         label={props.label}
         value={props.value}
